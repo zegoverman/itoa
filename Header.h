@@ -1,10 +1,11 @@
 char *itoa(int a_Num) {
+	char *pointer;
 	try{
 		char *pointer = new char[]; 	//needs to be dynamically allocated so pointer is initialised
 		//chose to use a new pointer so I don't need to specify a particular array size (it will expand to that needed for the int)
 	}
 	catch (bad_alloc xa){
-		return 0;
+		return "memory allocation failed";
 	}
 	int i = 10, j = 0, num = a_Num, remainder;
 	if (a_Num >= 0){
