@@ -1,4 +1,5 @@
-char *itoa(int a_Num) {
+char* itoa(int a_Num) {
+	//function to convert an integar into a null terminated string
 	char *pointer;
 	try{
 		pointer = new char[]; 	//needs to be dynamically allocated so pointer is initialised
@@ -40,7 +41,7 @@ char *itoa(int a_Num) {
 		}
 	}
 	
-	//The user needs to delete the pointer after using this function at some point!
+	//The user needs to delete the pointer after using this function at some point! Probably the class destructor
 
 	return pointer; 
 }
